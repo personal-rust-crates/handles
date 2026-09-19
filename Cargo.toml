@@ -1,0 +1,13 @@
+[package]
+name = "handles"
+version = "0.1.0"
+edition = "2024"
+
+[workspace]
+resolver = "2"
+members = ["."]
+
+[dependencies]
+bevy = "0.19.1"
+config = { git = "https://github.com/personal-rust-crates/config.git", branch = "master" }
+encase = "=0.12.0"
