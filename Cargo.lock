@@ -2869,7 +2869,6 @@ version = "0.1.0"
 dependencies = [
  "bevy",
  "config",
- "encase",
  "serde",
  "serde-big-array",
  "serde_json",
