@@ -3,6 +3,7 @@ use crate::valid_key::ValidKey;
 use bevy::asset::{Assets, Handle};
 use bevy::color::Color;
 use bevy::ecs::resource::Resource;
+use bevy::material::AlphaMode;
 use bevy::mesh::Mesh;
 use bevy::pbr::StandardMaterial;
 use bevy::utils::default;
@@ -50,6 +51,7 @@ where
                     // StandardMaterial::from_color(*color)
                     StandardMaterial {
                         base_color: *color,
+                        alpha_mode: AlphaMode::Blend,
                         perceptual_roughness: 0.85,
                         reflectance: 0.04,
                         metallic: 0.0,
