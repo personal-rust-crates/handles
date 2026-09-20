@@ -22,6 +22,14 @@ where
     StandardMaterialKey: ValidKey,
     MeshKey: ValidKey,
 {
+    pub fn mesh(&self, key: &MeshKey) -> Handle<Mesh> {
+        self.meshes[key].clone()
+    }
+
+    pub fn standard_material(&self, key: &StandardMaterialKey) -> Handle<StandardMaterial> {
+        self.standard_materials[key].clone()
+    }
+
     pub fn with_standard_materials<ColorKey>(
         &mut self,
         materials_asset: &mut Assets<StandardMaterial>,
