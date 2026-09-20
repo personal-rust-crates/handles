@@ -5,6 +5,7 @@ use bevy::color::Color;
 use bevy::ecs::resource::Resource;
 use bevy::mesh::Mesh;
 use bevy::pbr::StandardMaterial;
+use bevy::utils::default;
 use std::collections::HashMap;
 use std::hash::Hash;
 
@@ -45,7 +46,16 @@ where
 
             self.standard_materials.insert(
                 standard_material_key,
-                materials_asset.add(StandardMaterial::from_color(*color)),
+                materials_asset.add(
+                    // StandardMaterial::from_color(*color)
+                    StandardMaterial {
+                        base_color: *color,
+                        perceptual_roughness: 0.85,
+                        reflectance: 0.04,
+                        metallic: 0.0,
+                        ..default()
+                    },
+                ),
             );
         }
     }
