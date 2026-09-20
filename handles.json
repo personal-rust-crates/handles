@@ -1,0 +1,81 @@
+{
+    "colors": {
+        "Red": {
+            "Hsla": {
+                "hue": 0.0,
+                "saturation": 1.0,
+                "lightness": 1.0,
+                "alpha": 1.0
+            }
+        },
+        "Green": {
+            "Hsla": {
+                "hue": 100.0,
+                "saturation": 1.0,
+                "lightness": 1.0,
+                "alpha": 1.0
+            }
+        },
+        "Blue": {
+            "Hsla": {
+                "hue": 235.0,
+                "saturation": 1.0,
+                "lightness": 1.0,
+                "alpha": 1.0
+            }
+        }
+    },
+    "meshes": {
+        "Circle": {
+            "Circle": {
+                "radius": 1.0
+            }
+        },
+        "Polygon": {
+            "Polygon": {
+                "radius": 1.0,
+                "sides": 6
+            }
+        },
+        "Rectangle": {
+            "Rectangle": {
+                "width": 1.0,
+                "height": 1.0
+            }
+        },
+        "Sphere": {
+            "Sphere": {
+                "radius": 1.0,
+                "subdivisions": 3
+            }
+        },
+        "Cuboid": {
+            "Cuboid": {
+                "size": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        "Plane": {
+            "Plane": {
+                "normal": [
+                    0.0,
+                    1.0,
+                    0.0
+                ],
+                "size": [
+                    1.0,
+                    1.0
+                ],
+                "subdivisions": 2
+            }
+        }
+    },
+    "standard_materials": {
+        "RedMaterial": "Red",
+        "GreenMaterial": "Green",
+        "BlueMaterial": "Blue"
+    }
+}

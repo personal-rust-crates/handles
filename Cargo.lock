@@ -2870,6 +2870,9 @@ dependencies = [
  "bevy",
  "config",
  "encase",
+ "serde",
+ "serde-big-array",
+ "serde_json",
 ]
 
 [[package]]
